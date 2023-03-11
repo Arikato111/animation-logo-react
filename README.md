@@ -22,3 +22,4 @@ just a clock
 
 - [x] analog clock 
 - [x] reverse clock
+- [x] smooth clock

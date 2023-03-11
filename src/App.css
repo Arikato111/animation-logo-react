@@ -1,5 +1,5 @@
 main {
-    background-color: black;
+  background-color: black;
 }
 
 .radius {
@@ -31,6 +31,9 @@ main {
   border-radius: 10px;
 }
 
+.smooth {
+  transition: 1s linear;
+}
 #second {
   height: 100px;
   width: 3px;

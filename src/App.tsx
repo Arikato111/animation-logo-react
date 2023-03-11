@@ -8,6 +8,7 @@ const App: FC = () => {
     hour: 0
   })
   const [reverseClock, setReverseClock] = useState(false)
+  const [isSmooth, setIsSmooth] = useState(false)
   const changeTime = () => {
     const getTime = new Date();
     let hour = getTime.getHours();
@@ -27,15 +28,16 @@ const App: FC = () => {
   return <main className="block">
     <div
       style={reverseClock ? { transform: `rotate(-${nowTime.second * 6}deg)` } : {}}
-      id="radius" className="radius">
-      <div style={{ transform: `rotate(${nowTime.second * 6}deg) translate(0, -50%)` }} id="second" className="clock" />
+      id="radius" className={`radius ${isSmooth ? "smooth" : ""}`}>
+      <div style={{ transform: `rotate(${nowTime.second * 6}deg) translate(0, -50%)` }} id="second" className={`clock ${isSmooth ? "smooth" : ""}`} />
       <div style={{ transform: `rotate(${nowTime.minute * 6}deg) translate(0, -50%)` }} id="min" className="clock" />
       <div style={{ transform: `rotate(${nowTime.hour * 30}deg) translate(0, -50%)` }} id="hour" className="clock" />
       <div className="num12">XII</div>
       <div className="dot" />
     </div>
     <p>
-      <button onClick={() => setReverseClock(!reverseClock)}>reverse</button>
+      <button onClick={() => setReverseClock(!reverseClock)}>reverse ({reverseClock ? "on" : "off"})</button>
+      <button onClick={() => setIsSmooth(!isSmooth)}>smooth ({isSmooth ? "on" : "off"})</button>
     </p>
   </main>
 }

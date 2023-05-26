@@ -22,6 +22,7 @@ const Clock: FC = () => {
     }, 1000);
   }
   useEffect(() => {
+    document.title = "Clock"
     changeTime()
   }, [])
   return <main className="block bg-black">

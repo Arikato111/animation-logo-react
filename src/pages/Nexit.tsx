@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Nexit() {
+  useEffect(() => {
+    document.title = "Nexit";
+  }, []);
   return (
     <div>
       <link rel="stylesheet" href="/nexit.css" />

@@ -1,0 +1,66 @@
+.bg-black {
+  background-color: black;
+}
+
+.radius {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 230px;
+  border-radius: 100%;
+  border-width: 3px;
+  border-color: black;
+  border-style: dotted;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.num12 {
+  transform: translate(0, -100px);
+  font-size: 18px;
+}
+.clock {
+  background-color: black;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.smooth {
+  transition: 1s linear;
+}
+#second {
+  height: 100px;
+  width: 3px;
+  background-color: red;
+}
+#min {
+  height: 70px;
+  width: 5px;
+}
+#hour {
+  height: 40px;
+  width: 7px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  /* animation: walking linear 3600s infinite; */
+  position: absolute;
+  border-radius: 100%;
+}
+@keyframes walking {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

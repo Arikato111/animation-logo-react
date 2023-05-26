@@ -1,0 +1,37 @@
+.content {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.box {
+  display: inline-block;
+  padding: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.triangle {
+  position: absolute;
+  background-color: transparent;
+  border: 25px solid white;
+  padding: 60px;
+  z-index: 1;
+  animation: roling 10s infinite linear;
+}
+.fixed {
+  animation: roling 15s infinite linear;
+  background-color: black;
+  z-index: 0;
+}
+@keyframes roling {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

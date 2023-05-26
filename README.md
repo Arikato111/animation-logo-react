@@ -4,7 +4,7 @@
 <img align="center" alt="Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg">
 </p>
 
-# <p align="center">Clock time react</p>
+# <p align="center">Animation logo with react</p>
 
 just a clock 
 
@@ -17,9 +17,11 @@ just a clock
 ## Inside it
 
 - React + Vite + TypeScript
+- react-router-dom
 
 ## TODOs
 
+- [x] add more animation logo
 - [x] analog clock 
 - [x] reverse clock
 - [x] smooth clock
